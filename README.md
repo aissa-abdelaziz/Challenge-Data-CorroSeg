@@ -7,18 +7,24 @@ This challenge, organized by ENS Ulm and Collège de France, aims to train a mod
 Here is an example of the image and its corresponding ground truth mask:
 
 
-<img src="example.png" alt="Example" width="400"/>
+<p align="center">
+  <img src="example.png" alt="Example" width="400"/>
+</p>
 
 ## Results
 The best results were achieved using the UNet architecture, with dice scores of 0.85% for training, 0.82% for validation, and 0.61% for testing.
 
 UNet Architecture:
 
-<img src="Unet.png" alt="UNet Architecture" width="400"/>
+<p align="center">
+  <img src="Unet.png" alt="UNet Architecture" width="400"/>
+</p>
 
 Results Plot:
 
-<img src="dice score.png" alt="Results Plot" width="400"/>
+<p align="center">
+  <img src="dice score.png" alt="Results Plot" width="400"/>
+</p>
 
 
 ## References
