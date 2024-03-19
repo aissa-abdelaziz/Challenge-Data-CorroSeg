@@ -1,15 +1,23 @@
 # Challenge-Data-CorroSeg
 
 ## Overview
-This challenge, organized by ENS Ulm and Collège de France, aims to train a model for segmenting groove defects in provided patch images. The objective is to achieve the highest possible dice score using the provided data, which consists of patch images of groove defects and their corresponding masks sized at 36x36 pixels. Evaluation is based on the dice score, and only the provided data is allowed for model training. Our implementation explores three architectures: UNet, Attention UNet, and Residual UNet.
+This challenge, organized by ENS Ulm and Collège de France, aims to train a model for segmenting groove defects in provided patch images. The objective is to achieve the highest possible dice score using the provided data, which consists of patch images of groove defects and their corresponding masks sized at 36x36 pixels. Evaluation is based on the dice score, and only the provided data is allowed for model training. Our approach involves exploring three architectural designs: UNet, Attention UNet, and Residual UNet, each trained using various loss functions: Binary Cross-Entropy (BCE), Focal Loss, and Dice Loss.
 
 ## Example
 Here is an example of the image and its corresponding ground truth mask:
 ![Example Image](example.png)
 
 ## Results
-The best results were obtained using the UNet architecture, achieving a dice score of 0.85% for training, 0.82% for validation, and 0.61% for testing.
-![Plot](plot.png)
+The best results were achieved using the UNet architecture, with dice scores of 0.85% for training, 0.82% for validation, and 0.61% for testing.
+
+UNet Architecture:
+
+<img src="Unet.png" alt="UNet Architecture" width="400"/>
+
+Results Plot:
+
+<img src="dice score.png" alt="Results Plot" width="400"/>
+
 
 ## References
 - **U-Net: Convolutional Networks for Biomedical Image Segmentation**  
